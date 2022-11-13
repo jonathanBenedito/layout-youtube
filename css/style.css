@@ -1,0 +1,64 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:  "conteudo-video propaganda"
+                        "conteudo-video recomendacoes";
+  grid-template-columns: 1fr 270px;
+  grid-template-rows: 56px 1fr;
+  gap: 20px;
+  padding: 35px;
+  background-color: #f7f7f7;
+} 
+
+.conteudo-video {
+  grid-area: conteudo-video;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.informacoes h1.titulo {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.informacoes p.visualizacoes {
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.propaganda {
+  grid-area: propaganda;
+}
+
+.recomendacoes {
+  grid-area: recomendacoes;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-video {
+  display: flex;
+  gap: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.info h2.nome {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.info p {
+  font-size: 11px;
+}
